@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "dfd-socicons-font";
+  src: url("../fonts/dfd_icon_set.eot");
+  src: url("../fonts/dfd_icon_set.eot?#iefix") format("embedded-opentype"), url("../fonts/dfd_icon_set.woff") format("woff"), url("../fonts/dfd_icon_set.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "dfd-added-icon";
+  src: url("../fonts/dfd-added-icon.eot");
+  src: url("../fonts/dfd-added-icon#iefix.eot") format("embedded-opentype"), url("../fonts/dfd-added-icon.ttf") format("truetype"), url("../fonts/dfd-added-icon.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+[class*=" dfd-socicon-"], [class^=dfd-socicon-] {
+  font-family: dfd-socicons-font;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^=dfd-added-icon-], [class*=" dfd-added-icon-"] {
+  font-family: dfd-added-icon;
+  speak: never;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dfd-socicon-icon-ios7-cart::before {
+  content: "\e959";
+}
+
+.dfd-socicon-Search:before {
+  content: "\ea4c";
+}
+
+.dfd-socicon-icon-close-round:before {
+  content: "\ea39";
+}
+
+.dfd-socicon-facebook:before {
+  content: "\e96b";
+}
+
+.dfd-socicon-instagram:before {
+  content: "\e996";
+}
+
+.dfd-added-icon-twitter-x-logo:before {
+  content: "\e900";
+}
+
+.dfd-socicon-clock:before {
+  content: "\ea8a";
+}
+
+.dfd-socicon-quote-left:before {
+  content: "\ea51";
+}
+
+.dfd-socicon-chevron-arrow-up:before {
+  content: "\e9c4";
+}
