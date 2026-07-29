@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		if (!preloader || !percentageDisplay) return;
 
-		const images = Array.from(document.images);
+		const images = Array.from(document.images).filter(img => img.loading !== 'lazy');
 		const total = images.length;
 		let loaded = 0;
 		let current = 0;
@@ -83,9 +83,14 @@ document.addEventListener("DOMContentLoaded", () => {
 			}
 		});
 
-		window.addEventListener('load', () => {
+		function forceComplete() {
 			target = 100;
-		}, { once: true });
+		}
+		if (document.readyState === 'complete') {
+			forceComplete();
+		} else {
+			window.addEventListener('load', forceComplete, { once: true });
+		}
 
 		function animate() {
 			if (current < target) {
