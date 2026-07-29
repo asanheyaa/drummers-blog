@@ -1860,7 +1860,7 @@ body::selection {
 }
 
 .newsletter {
-  background: url(../../img/home-page/newsletter/newsletter-back.webp) center/cover no-repeat;
+  background: url(../img/home-page/newsletter/newsletter-back.webp) center/cover no-repeat;
   padding-block: 70px;
 }
 @media (max-width: 1230px) {
