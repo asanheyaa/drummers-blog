@@ -1547,10 +1547,8 @@ body::selection {
 }
 .home-articles__button {
   padding-block: 0.5rem;
-  -webkit-transition: opacity 0.5s ease 0s, visibility 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-  transition: opacity 0.5s ease 0s, visibility 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, opacity 0.5s ease 0s, visibility 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, opacity 0.5s ease 0s, visibility 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .home-articles__button:not(._active) {
   -webkit-transform: scale(0.8);
@@ -1796,10 +1794,8 @@ body::selection {
   }
 }
 .home-products__button {
-  -webkit-transition: opacity 0.5s ease 0s, visibility 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-  transition: opacity 0.5s ease 0s, visibility 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, opacity 0.5s ease 0s, visibility 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, opacity 0.5s ease 0s, visibility 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .home-products__button:not(._active) {
   -webkit-transform: scale(0.8);
