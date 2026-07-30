@@ -1420,7 +1420,7 @@ body::selection {
             transform: scale(1.05);
   }
   .home-articles__article:hover .home-articles__text {
-    max-height: 12.5rem;
+    max-height: 100px;
     margin-top: 1.25rem;
   }
 }
@@ -1462,6 +1462,14 @@ body::selection {
   right: 0.9375rem;
   z-index: 2;
   font-weight: 600;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .home-articles__category:hover {
+    background: #efd101;
+    color: #1b1b1b;
+  }
 }
 .home-articles__footer {
   padding: 1.25rem;
@@ -1493,6 +1501,13 @@ body::selection {
   line-height: 1;
   letter-spacing: 0;
   color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .home-articles__link:hover {
+    color: #fff;
+  }
 }
 .home-articles__label-link {
   color: #fff;
@@ -1503,13 +1518,18 @@ body::selection {
   line-height: 1.238;
   letter-spacing: -0.075rem;
 }
+@media (any-hover: hover) {
+  .home-articles__label-link:hover {
+    text-decoration: underline;
+  }
+}
 .home-articles__text {
   margin-top: 0;
   font-family: open sans;
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: max-height 0.5s ease, margin 0.5s ease;
-  transition: max-height 0.5s ease, margin 0.5s ease;
+  -webkit-transition: max-height 0.5s ease, margin-top 0.3s ease;
+  transition: max-height 0.5s ease, margin-top 0.3s ease;
   line-height: 2;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1517,6 +1537,7 @@ body::selection {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   max-height: 0;
+  margin-top: 0;
 }
 @media (max-width: 47.9988rem) {
   .home-articles__pagination {
