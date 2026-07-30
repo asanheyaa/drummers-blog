@@ -288,10 +288,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		const options = {
 			root: null,
 			rootMargin: "0px",
-			threshold: 0.50
+			threshold: 0.15
 		};
 
-		// Функція зворотного виклику (callback)
 		const callback = (entries, observer) => {
 			entries.forEach(entry => {
 				if (entry.isIntersecting) {
@@ -302,7 +301,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 		};
 
-		// Створюємо екземпляр обсервера
 		const observer = new IntersectionObserver(callback, options);
 		animationItems.forEach(animationItem => {
 			observer.observe(animationItem);
