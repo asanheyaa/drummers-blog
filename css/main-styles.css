@@ -1440,12 +1440,12 @@ body::selection {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .home-articles__photo img {
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .home-articles__category {
   white-space: nowrap;
@@ -1508,8 +1508,8 @@ body::selection {
   font-family: open sans;
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: max-height 0.3s ease, margin 0.3s ease;
-  transition: max-height 0.3s ease, margin 0.3s ease;
+  -webkit-transition: max-height 0.5s ease, margin 0.5s ease;
+  transition: max-height 0.5s ease, margin 0.5s ease;
   line-height: 2;
   overflow: hidden;
   text-overflow: ellipsis;
